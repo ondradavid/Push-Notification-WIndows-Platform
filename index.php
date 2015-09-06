@@ -97,8 +97,8 @@ class WPN{
     }
 }
 
-$push = new WPN('ms-app://s-1-15-2-3718415075-2664978992-2678993040-2712305374-3484128127-2804376471-609642385', '8AeZ1mJW3CVXKHX/T6H/8/OUMyNp3wio');
+$push = new WPN('sid', 'client_secret');
 $message = $push->build_tile_xml("První", "Druhý");
-$push->post_tile("https://db3.notify.windows.com/?token=AwYAAACmgJarWOyWqEdtWUyrP3D7XYplLIJfXy%2fK5tMxEb7yUL3GGuWoSZf0Od7vxPCfuKv5V3i8TRvZPLWlVi%2fktrhfkCl1j80oUcpm8px2XbKxRl5WRINuY6uIftPWna2tqSw%3d", $message);
+$push->post_tile("uri", $message);
 
 ?>
